@@ -65,7 +65,7 @@
         musicOff:"Музыка: выкл ♫",
         musicOn:"Музыка: вкл ♫",
         open:"Открыть письмо 💌",
-        letterTop:"Иногда расстояние — это способ беречь.",
+        letterTop:"Amor aeternus ∞",
         reduce:"Сократить расстояние",
         letterBottom:"— всегда твой / toujours à toi",
         letterHTML: `
@@ -104,7 +104,7 @@
         musicOff:"Musique : off ♫",
         musicOn:"Musique : on ♫",
         open:"Ouvrir la lettre 💌",
-        letterTop:"Parfois, la distance est une façon de protéger.",
+        letterTop:"Je te désire. Je te choisis. À jamais.",
         reduce:"Rapprocher la distance",
         letterBottom:"— toujours à toi / всегда твой",
         letterHTML: `
@@ -148,7 +148,7 @@
       musicBtn.textContent = (musicOn ? texts[lang].musicOn : texts[lang].musicOff);
 
       letterTop.textContent = texts[lang].letterTop;
-      letterText.innerHTML = texts[lang].letterHTML;
+      letterText.innerHTML = texts[lletterHTML].letterHTML;
       reduceBtn.textContent = texts[lang].reduce;
       letterBottom.textContent = texts[lang].letterBottom;
     }
@@ -669,7 +669,7 @@
     .envelope{
       position:relative;
       width:100%;
-      min-height:560px;
+      min-height:1016px;
       border-radius:28px;
       background:
         radial-gradient(700px 320px at 30% 20%, rgba(255,111,160,.20), transparent 60%),
@@ -721,7 +721,7 @@
     .letter{
       position:absolute;
       left:50%;
-      top:62%;
+      top:11%;
       transform:translate(-50%, 20%);
       width:min(820px, 94%);
       background: rgba(255,255,255,.62);
@@ -895,7 +895,7 @@
         <div class="seal" title="open"></div>
 
         <div class="letter" id="letter">
-          <div class="letterHeader" id="letterTop">Иногда расстояние — это способ беречь.</div>
+          <div class="letterHeader" id="letterTop"> Amor aeternus ∞</div>
 
           <div class="distanceLine">
             <div class="distanceBar" id="distanceBar"></div>
@@ -956,17 +956,54 @@
         musicOff:"Музыка: выкл ♫",
         musicOn:"Музыка: вкл ♫",
         open:"Открыть письмо 💌",
-        letterTop:"Иногда расстояние — это способ беречь.",
+        letterTop:" Amor aeternus ∞",
         reduce:"Сократить расстояние",
         letterBottom:"— всегда твой / toujours à toi",
         letterHTML: `
-          <div><b>À un mètre… mais toujours ensemble.</b></div>
-          <div class="muted">В метре друг от друга — но всегда рядом.</div>
-          <div>Говорят, любовь — это быть рядом.</div>
-          <div>А я понял, что любовь — это чувствовать, даже на расстоянии.</div>
-          <div><b>Даже в метре друг от друга — я выбираю тебя.</b></div>
-          <div>Каждый день. Без исключений.</div>
-          <div class="muted">↓ ниже можно добавить длинное пожелание, блок будет прокручиваться</div>
+          <p>
+В фильме «В метре друг от друга» любовь жила в расстоянии.<br>
+Всего один метр — и в нём было больше желания,<br>
+чем в тысячах прикосновений.
+</p>
+
+<p>
+Иногда этот метр становится опасно тонким.<br>
+В нём — дыхание, тишина и напряжение.<br>
+И одно мгновение может остаться с тобой навсегда.<br>
+И иногда достаточно одного такого мгновения,<br>
+чтобы сердце ещё долго билось чуть быстрее обычного.
+</p>
+
+<p>
+Я понял, что любовь — это не про запреты.<br>
+Она про выбор.<br>
+Про желание беречь, а не владеть.<br>
+Про то, чтобы даже не прикасаясь —<br>
+быть ближе, чем кто-либо другой.
+</p>
+
+<p>
+Любовь — это когда не нужно доказывать.<br>
+Когда не страшно молчать.<br>
+Когда присутствие важнее слов,<br>
+а искренность — важнее правильных жестов.
+</p>
+
+<p>
+Если честно, я не спешу.<br>
+Потому что самое сильное чувство —<br>
+то, которое растёт медленно,<br>
+но захватывает полностью.
+</p>
+
+<p><b>
+Когда даже без слов ясно:<br>
+между нами происходит что-то настоящее.
+</b></p>
+
+<p style="text-align:center; font-size:18px; margin-top:14px;">
+❤️ люблю тебя сильно-сильно
+</p>
         `,
         reduceHint:"Любовь не измеряется метрами."
       },
@@ -976,18 +1013,54 @@
         musicOff:"Musique : off ♫",
         musicOn:"Musique : on ♫",
         open:"Ouvrir la lettre 💌",
-        letterTop:"Parfois, la distance est une façon de protéger.",
+        letterTop:"Je te désire. Je te choisis. À jamais.",
         reduce:"Rapprocher la distance",
         letterBottom:"— toujours à toi / всегда твой",
-        letterHTML: `
-          <div><b>À un mètre… mais toujours ensemble.</b></div>
-          <div class="muted">В метре друг от друга — но всегда рядом.</div>
-          <div>Ils disent que l’amour, c’est être proche.</div>
-          <div>Mais je sais que l’amour, c’est ressentir — même à distance.</div>
-          <div><b>Même à un mètre… je te choisis.</b></div>
-          <div>Chaque jour. Sans exception.</div>
-          <div class="muted">↓ tu peux ajouter un long message ici, la zone défile</div>
-        `,
+        letterHTML: `<p>
+В фильме «В метре друг от друга» любовь жила в расстоянии.<br>
+Всего один метр — и в нём было больше желания,<br>
+чем в тысячах прикосновений.
+</p>
+
+<p>
+Иногда этот метр становится опасно тонким.<br>
+В нём — дыхание, тишина и напряжение.<br>
+И одно мгновение может остаться с тобой навсегда.<br>
+И иногда достаточно одного такого мгновения,<br>
+чтобы сердце ещё долго билось чуть быстрее обычного.
+</p>
+
+<p>
+Я понял, что любовь — это не про запреты.<br>
+Она про выбор.<br>
+Про желание беречь, а не владеть.<br>
+Про то, чтобы даже не прикасаясь —<br>
+быть ближе, чем кто-либо другой.
+</p>
+
+<p>
+Любовь — это когда не нужно доказывать.<br>
+Когда не страшно молчать.<br>
+Когда присутствие важнее слов,<br>
+а искренность — важнее правильных жестов.
+</p>
+
+<p>
+Если честно, я не спешу.<br>
+Потому что самое сильное чувство —<br>
+то, которое растёт медленно,<br>
+но захватывает полностью.
+</p>
+
+<p><b>
+Когда даже без слов ясно:<br>
+между нами происходит что-то настоящее.
+</b></p>
+
+<p style="text-align:center; font-size:18px; margin-top:14px;">
+❤️ люблю тебя сильно-сильно
+</p>
+`,
         reduceHint:"L’amour ne se mesure pas en mètres."
       }
     };
